@@ -1,0 +1,11 @@
+{% extends 'main/main.html' %}
+
+{% block content %}
+<h1 class = "student">Sign up as Teacher</h1>
+	<form method='POST'>
+		{% csrf_token %}
+		{{form}}
+		<button type='submit'>Sign Up</button>
+		<p>Have an account? Log in<a href="/login"> here</a></p>
+	</form>
+{% endblock %}
